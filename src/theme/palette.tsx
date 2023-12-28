@@ -1,0 +1,15 @@
+export const Palette = {
+  purple: 'rgb(99, 102, 241)',
+  purple_light: 'rgb(168, 85, 247)',
+  white: '#fff',
+  green: 'rgb(20, 184, 166)',
+  green_dark: 'rgb(13, 148, 136)',
+  green_light: 'rgb(240, 253, 250)',
+  black: 'rgb(17, 24, 39)',
+  gray_darker: 'rgb(100, 116, 139)',
+  gray_medium: 'rgb(218, 225, 231)',
+  gray_dark: 'rgb(241, 245, 249)',
+  gray_light: 'HSL(200, 33%, 96%)',
+  gray: 'rgb(184, 194, 204)',
+  gray_neutral: 'rgb(85, 85, 85)',
+};
