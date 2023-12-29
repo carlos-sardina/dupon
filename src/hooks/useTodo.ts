@@ -9,11 +9,13 @@ import { v4 as uuidv4 } from 'uuid';
 import { TODO_STATUS_MAP } from '../maps';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
+import { useSettings } from '.';
 
 export const useTodo = () => {
   const [newTodo, setNewTodo] = useState('');
   const todos = useAppSelector((state) => state.todos);
   const dispatch = useDispatch();
+  const { filter } = useSettings();
 
   const addTodo = () => {
     if (!newTodo) {
@@ -74,7 +76,7 @@ export const useTodo = () => {
   return {
     newTodo,
     updateNewTodo: setNewTodo,
-    todos,
+    todos: filter ? todos.filter((todo) => todo.status === filter) : todos,
     addTodo,
     deleteTodo,
     toggleTodoStatus,
