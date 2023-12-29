@@ -12,7 +12,7 @@ export const Filters = () => {
         <span className="font-bold">Filter by:</span> {filter ? TODO_STATUS_MAP[filter].text : 'All'}
       </p>
       <div className="flex gap-2">
-        <Button icon={<IconList />} onClick={() => changeFilter(null)} isInactive={Boolean(filter)} />
+        <Button text="All" icon={<IconList />} onClick={() => changeFilter(null)} isInactive={Boolean(filter)} />
         <Button
           icon={<IconClock />}
           isInactive={filter !== TODO_STATUS_MAP.pending.key}
