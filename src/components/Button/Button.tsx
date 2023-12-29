@@ -1,28 +1,16 @@
 type ButtonProps = {
   text?: string;
-  backgroundColor: string;
-  textColor: string;
   icon?: React.ReactNode;
-  hoverBackgroundColor: string;
-  isActive?: boolean;
-  activeColor?: string;
+  isInactive?: boolean;
   onClick?: () => void;
 };
 
-export const Button = ({
-  text,
-  icon,
-  backgroundColor,
-  textColor,
-  hoverBackgroundColor,
-  isActive = false,
-  activeColor,
-  onClick = () => null,
-}: ButtonProps) => {
+export const Button = ({ text, icon, isInactive = false, onClick = () => null }: ButtonProps) => {
   return (
     <button
-      className={`flex items-center gap-1 bg-${backgroundColor} text-${textColor} hover:bg-${hoverBackgroundColor} py-2 px-3 rounded-md`}
-      style={{ border: isActive ? `2px solid ${activeColor}` : 'none' }}
+      className={`flex items-center gap-1 bg-purpleStrong text-white hover:bg-purpleStronger py-2 px-3 rounded-md ${
+        isInactive ? 'opacity-60' : ''
+      }`}
       onClick={onClick}
     >
       {text} {icon}

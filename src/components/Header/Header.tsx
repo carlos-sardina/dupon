@@ -17,8 +17,8 @@ export const Header = () => {
             text="Create"
             icon={<IconPlus width="20px" />}
             textColor="white"
-            backgroundColor="purpleStrong"
-            hoverBackgroundColor="purpleStronger"
+            backgroundColor="bg-purpleStrong"
+            hoverBackgroundColor="bg-purpleStronger"
           />
         </div>
       </div>
