@@ -9,6 +9,7 @@ export default {
       purpleStronger: '#222944',
       white: '#ffffff',
       gray: '#eeeff3',
+      grayLight: '#dddcdc',
       grayStrong: '#8e8e8e',
     },
   },

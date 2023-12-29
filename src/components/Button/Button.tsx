@@ -21,7 +21,7 @@ export const Button = ({
 }: ButtonProps) => {
   return (
     <button
-      className={`flex items-center gap-1 bg-${backgroundColor} text-${textColor} hover:bg-${hoverBackgroundColor}  py-2 px-3 rounded-md`}
+      className={`flex items-center gap-1 bg-${backgroundColor} text-${textColor} hover:bg-${hoverBackgroundColor} py-2 px-3 rounded-md`}
       style={{ border: isActive ? `2px solid ${activeColor}` : 'none' }}
       onClick={onClick}
     >
