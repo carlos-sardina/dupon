@@ -1,15 +1,12 @@
-import { Header, Todo } from './components';
+import { Content, Header } from './components';
 
 function App() {
   return (
     <main className="min-h-screen bg-purple p-6">
       <Header />
-      <ul className="mt-8 justify-between gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        <Todo />
-        <Todo />
-        <Todo />
-        <Todo />
-      </ul>
+      <div className="mt-8">
+        <Content />
+      </div>
     </main>
   );
 }

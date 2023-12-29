@@ -1,10 +1,10 @@
 type InputProps = {
+  placeholder: string;
   value: string;
   onChange: (value: string) => void;
-  placeholder: string;
 };
 
-export const Input = ({ value, onChange, placeholder }: InputProps) => {
+export const Input = ({ placeholder, value, onChange }: InputProps) => {
   return (
     <input
       type="text"
